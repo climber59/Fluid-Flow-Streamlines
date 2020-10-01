@@ -20,7 +20,7 @@ function [] = stream_path_lines_with_gui()
 		f1.NumberTitle = 'off';
 
 		tab = uitable('Parent',f1,'Units','normalized','Position',[0 0, 1 1],'FontSize',15);
-		tab.ColumnName = {'Enable','     Flow Type     ','Strength','x/theta','y'};
+		tab.ColumnName = {'Enable','     Flow Type     ','Strength','x,theta','y'};
 		tab.ColumnFormat = {'logical',{'     -','Uniform','Source','Vortex','Doublet'},'numeric','numeric','numeric'};
 		tab.ColumnEditable = true;
 		tab.Data = repmat({false '     -' 0 0 0},30,1);
